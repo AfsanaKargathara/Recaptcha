@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!--Inherited view for adding google captcha code on signup screen    -->
+
+        <template id="signup_captcha" inherit_id="auth_signup.signup" name="Captcha- SignUP Authentication">
+            <xpath expr="//button[@type='submit']" position="before">
+                <div class="form-group field-confirm_password">
+                    <script src='https://www.google.com/recaptcha/api.js' type="text/javascript"></script>
+                    <div class="g-recaptcha col-md-3 col-sm-4"  data-sitekey="6LdZ1FwUAAAAADnlbZDqSJY-VX9pjjCnjYmQAiOA"></div>
+                 </div>
+            </xpath>
+        </template>
+
+</odoo>

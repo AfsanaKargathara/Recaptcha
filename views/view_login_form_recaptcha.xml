@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!--Inherited view for adding google captcha code on login screen    -->
+
+        <template id="template_login_form_recaptcha" inherit_id="web.login" name="Captcha- Authentication">
+            <xpath expr="//button[@type='submit']" position="before">
+                <div id="login_form_recaptcha" class="form-group field-password">
+                      <script src='https://www.google.com/recaptcha/api.js' type="text/javascript"></script>
+                      <div class="g-recaptcha col-md-3 col-sm-4"  data-sitekey="6LdZ1FwUAAAAADnlbZDqSJY-VX9pjjCnjYmQAiOA"></div>
+                </div>
+            </xpath>
+        </template>
+
+</odoo>
